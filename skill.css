@@ -1,0 +1,84 @@
+/* General Styles */
+.dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 column layout */
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dropdown-item {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ddd; /* Light border for clean look */
+}
+
+.dropdown-header {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tools {
+    grid-column: span 3; /* Full-width */
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.drop-content {
+    display: none; /* Ensure it's hidden initially */
+    position: absolute; /* Prevents page shifting */
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile (smaller screens) */
+@media screen and (max-width: 768px) {
+    .dropdown-container {
+        grid-template-columns: 1fr; /* Stack items in one column */
+        padding: 15px;
+    }
+
+    .dropdown-item {
+        padding: 8px; /* Slightly smaller padding on mobile */
+    }
+
+    .tools {
+        grid-column: span 1; /* Tools section stays full width */
+        padding: 10px;
+    }
+
+    .drop-content {
+        position: relative; /* Adjust position on mobile */
+    }
+}
+
+/* Tablet and Medium Screens */
+@media screen and (max-width: 1024px) {
+    .dropdown-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        gap: 10px;
+    }
+
+    .dropdown-item {
+        padding: 12px; /* Adjust padding for medium screens */
+    }
+
+    .tools {
+        grid-column: span 2; /* Tools section spans 2 columns */
+    }
+}
+
+/* Large Screens (default layout) */
+@media screen and (min-width: 1025px) {
+    .dropdown-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    }
+}

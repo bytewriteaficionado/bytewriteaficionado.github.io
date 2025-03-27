@@ -1,0 +1,305 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Career Slider */
+.career__slider-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.career__slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Use 100% to allow proper sliding width calculation */
+}
+
+.career_slide {
+  flex: 0 0 100%; /* Ensure each slide takes up 100% of the container's width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.career__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.career__text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.career__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Navigation Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.left1 {
+  left: 10px;
+}
+
+.right1 {
+  right: 10px;
+}
+
+/* Responsive for Career Slider */
+@media (max-width: 768px) {
+  .career__slider {
+    display: flex;
+    width: 100%;
+  }
+
+  .career_slide {
+    flex: 0 0 100%; /* Each slide takes 100% of the screen width */
+    padding: 10px;
+  }
+
+  .career__text-container {
+    padding: 10px;
+  }
+
+  .career__image {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  .career__text {
+    font-size: 16px;
+  }
+}
+
+
+/* Achievements Section */
+.achievement__slider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.achievement__slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.achievement_slide {
+  flex: 0 0 100%; /* Each slide takes up 100% */
+  display: flex;
+  flex-direction: column; /* Stack text below the image */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.achievement__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement__text {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.achievement__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+.project__slider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.project__slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.project_slide {
+  flex: 0 0 100%; /* Each slide takes up 100% */
+  display: flex;
+  flex-direction: column; /* Stack text below the image */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.project__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__text {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* Work Section */
+.work__slider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.work__slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.work_slide {
+  flex: 0 0 100%; /* Each slide takes up 100% */
+  display: flex;
+  flex-direction: column; /* Stack text below the image */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.work__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.work__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.work__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work__text {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* Navigation Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.left,
+.right {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .career__slider, .achievement__slider, .project__slider, .work__slider {
+    width: 100%; /* Ensure each slider takes up full width */
+  }
+
+  .career_slide, .achievement_slide, .project_slide, .work_slide {
+    flex: 0 0 100%; /* Each slide takes 100% width */
+    flex-direction: column; /* Stack text below images */
+  }
+
+  .career__image, .achievement__image, .project__image, .work__image {
+    width: 80%; /* Adjust image width for smaller screens */
+    margin-bottom: 10px;
+  }
+
+  .career__text, .achievement__text, .project__text, .work__text {
+    font-size: 16px; /* Adjust font size for readability */
+    line-height: 1.4;
+  }
+
+  /* Ensure there is no overflow of text */
+  .career__text-container, .achievement__text-container, .project__text-container, .work__text-container {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  /* Optional: Adjust arrow size for small screens */
+  .arrow {
+    font-size: 18px;
+    padding: 8px;
+  }
+}

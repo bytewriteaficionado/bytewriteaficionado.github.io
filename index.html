@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/eagle.jpg" />
+
+  <!-- Put your site title here -->
+  <title>
+    Kawsar Uddin's portfolio.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="skill.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#home" class="nav__link" style="color:white"><strong>Home</strong></a></li>
+          <li class="nav__item"><a href="#about" class="nav__link"  style="color:white"><strong>About</strong></a></li>
+          <li class="nav__item">
+            <a href="#career" class="nav__link" style="color:white"><strong>Career</strong></a>
+          </li>
+           <li class="nav__item">
+            <a href="#achievements" class="nav__link" style="color:white"><strong>Achievement</strong></a>
+          </li>
+            </li>
+           <li class="nav__item">
+            <a href="#skills" class="nav__link" style="color:white"><strong>Skills</strong></a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link" style="color:white"><strong>Project</strong></a>
+          </li>
+            </li>
+           <li class="nav__item">
+            <a href="#works" class="nav__link" style="color:white"><strong>Work</strong></a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link" style="color:white"><strong>Contact</strong></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row" class="home" id="home">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span style="color:white">Hi! I am Kawsar Uddin Ahmed</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p style="color:white">⌾Blog Writer ⌾Penetration Testing Enthusiastic </p>
+        <p style="color:white"> <strong>Aiming to leverage my writting , programming and pentration testing skills to enhance my knowledge,solve real-world challenges,and boost my creativity.</strong></p>
+        <a href="#contact" class="btn btn--pink">Contact</a>
+      </div>
+
+    </div>
+ </header>
+
+  <main role="main">
+
+<!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+              <h3>My Introduction</h3>
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Hello! I’m Kawsar Uddin Ahmed Chowdhury from Chittagong, Bangladesh. I hold a Bachelor of Science (BSc) degree in Computer Science and Engineering from International Islamic University, Chittagong.During my undergraduate studies, I was actively involved in blog writing, bug bounty hunting, and learning Python programming. I continue to write insightful blogs and further enhance my Python skills.I previously interned as a Post Entry-Level Information Security Officer at a local company and also worked as an Office Administrator at Karnafully Shipping and Trading Limited. You can find more details below.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./pdf/Kawsar_Uddin.pdf" class="btn">My Resume</a>
+          </div>
+           <div class="about__photo-container">
+             <img src="./images/abc2.jpg" class="work__image" alt="Photo1" width="1033" height="602" />
+            </div>
+        </div>
+      </div>
+    </section>
+            <!---<div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+ <!-- ***** Career ***** -->
+<section class="career" id="career">
+    <div class="row">
+      <h2>Career</h2>
+      <div class="career__slider-container">
+        <div class="career__slider">
+          <!-- Slide 1 -->
+        <div class="career_slide">
+        <img src="./images/logo7.png" class="career__image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+           <p class="career__text">
+              <strong>BSC in Engineering in CSE</strong><br>
+              International Islamic University, Chittagong<br>
+              Chattogram, Bangladesh <br>
+              Year: 2021
+            </p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="career_slide">
+          <img src="./images/logo8.jpeg" class="career__image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+           <p class="career__text">
+              <strong>Secondary School Certificate (Science)</strong><br>
+              Nasirabad Government Boys High School<br>
+              Chattogram, Bangladesh <br>
+              Year: 2013
+            </p>
+          </div>
+            <!-- Slide 2 -->
+        <div class="career_slide">
+        <img src="./images/logo9.jpeg" class="career__image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+          <p class="career__text">
+              <strong>Higher Secondary School Certificate (Science)</strong><br>
+              Patiya Government College<br>
+              Chattogram, Bangladesh <br>
+              Year: 2015
+            </p>
+          </div>
+        </div>
+
+        <!-- Left Arrow -->
+        <div class="arrow left1" onclick="moveToPrevImage()">&#10094;</div>
+        <!-- Right Arrow -->
+       <div class="arrow right1" onclick="moveToNextImage()">&#10095;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Link to the external JavaScript -->
+  <script src="career.js"></script> <!-- Ensure this path is correct --->
+  
+  
+    <!-- ***** Achievments ***** -->
+<section class="achievement" id="achievements">
+    <div class="row">
+      <h2>Certification & Achievement</h2>
+      <div class="achievement__slider-container">
+        <div class="achievement__slider">
+        
+          <!-- Slide 1 -->
+          <div class="achievement_slide">
+            <img src="./Certificates/PythonSolo_Learn_certificate.png" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+              <strong>&nbsp;&nbsp;Python course complete</strong><br><strong>&nbsp;certificate from sololearn</strong>
+            </p>
+          </div>
+           <!-- Slide 2 -->
+           <div class="achievement_slide">
+          <img src="./Certificates/Cybersecurity_Essentials_Badge20231105-31-7bkk9e_page-0001.jpg" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+             <strong>Cisco Cyber Security Essential</strong><br>
+             <strong>Course Complete Certificate</strong><br>
+          </div>
+          
+           <!-- Slide 3 -->
+           <div class="achievement_slide">
+          <img src="./Certificates/Professional_Cyber_Security - Copy.jpg" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+             <strong>&nbsp;Professional Cyber Security Course</strong><br>
+             <strong>Certificate from DevSkill</strong><br>
+          </div>
+          
+          <!-- Slide 4 -->
+          <div class="achievement_slide">
+          <img src="./Certificates/Try_hack_me_CompTIA_A+.jpeg" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+              <strong>Tryhackme CompTIA A+ certificate.</strong>
+          </div>
+          
+           <!-- Slide 5 -->
+          <div class="achievement_slide">
+          <img src="./Certificates/CISCO_COURSE.jpg" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+              <strong>CCNA Course Complete Certificate.</strong>
+          </div>
+          
+          <!-- Slide 6 -->
+          
+           <div class="achievement_slide">
+          <img src="./Certificates/SEO_BASIC_HUBSPOT.png" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+             <strong>Hubspot SEO Basic </strong><br>
+             <strong>Certificate</strong><br>
+          </div>
+          
+            <!-- Slide 7 -->
+          <div class="achievement_slide">
+          <img src="./Certificates/Semrush_keyword_research_certificate_page-0001.jpg" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+             <strong>Semrush Keyword Research</strong><br>
+             <strong>Certificate</strong><br>
+          </div>
+          
+          <!-- Slide 8 -->
+          
+            <div class="achievement_slide">
+          <img src="./Certificates/Content_Marketing_husbspot.png" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="achievement__text">
+             <strong>Hubspot Content Marketing</strong><br>
+             <strong>Certificate</strong><br>
+          </div>
+          
+        </div>
+
+        <!-- Left Arrow -->
+       <div class="arrow left1" onclick="moveToPrevImageAchievement()">&#10094;</div>
+        <!-- Right Arrow -->
+        <div class="arrow right1" onclick="moveToNextImageAchievement()">&#10095;</div>
+      </div>
+    </div>
+  </section>
+  <!-- Link to the external JavaScript -->
+     <script src="achievement.js"></script> <!-- Ensure this path is correct -->
+   
+     <!-- ***** Skill ***** -->
+      <section class="skill" id="skills">
+      <div class="row">
+        <h2>Skill</h2>
+        <div>
+
+<div class="dropdown-container">
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <span><strong>Languages▼</strong></span>
+        </div>
+        <div class="dropdown-content">
+                    <table>
+                        <tr><td>Python</td></tr>
+                        <tr><td>Bash</td></tr>
+                        <tr><td>C++</td></tr>
+                    </table>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <span><strong>Operating System▼</strong></span>
+        </div>
+        <div class="dropdown-content">
+                    <table>
+                        <tr><td>Windows(10,7)</td></tr>
+                        <tr><td>Kali Linux</td></tr>
+                    </table>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <span><strong>IDE▼</strong></span>
+        </div>
+        <div class="dropdown-content">
+                    <table>
+                        <tr><td>VS Code</td></tr>
+                        <tr><td>PyCharm</td></tr>
+                        <tr><td>Sublime Text</td></tr>
+                    </table>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <span><strong>Cyber_tools▼</strong></span>
+        </div>
+        <div class="dropdown-content">
+                    <table>
+                        <tr><td>Wireshark</td></tr>
+                        <tr><td>Metasploit</td></tr>
+                        <tr><td>Burpsuite</td></tr>
+                        <tr><td>Nmap</td></tr>
+                        <tr><td>Sqlmap</td></tr>
+                    </table>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <span><strong>Blog▼</strong></span>
+        </div>
+        <div class="dropdown-content">
+                    <table>
+                        <tr><td><a href="https://medium.com/@kawsaruddin238"><strong>Medium.com</strong></td></tr>
+                    </table>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <span><strong>VCS▼</strong></span>
+        </div>
+        <div class="dropdown-content">
+                    <table>
+                        <tr><td>Github</td></tr>
+                    </table>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <span><strong>Database▼</strong></span>
+        </div>
+        <div class="dropdown-content">
+                    <table>
+                        <tr><td>MySQL</td></tr>
+                    </table>
+        </div>
+    </div>
+
+    <!-- Tools section (full width) -->
+    <!--<div class="dropdown-item tools">
+        <div class="dropdown-header">
+            <span>Tools</span>
+        </div>--->
+    </div>
+</div>
+ </section>
+      
+<script src="skill.js"></script>
+      
+      <!--------Project------->
+      
+<section class="project" id="projects">
+    <div class="row">
+      <h2>Projects</h2>
+      <div class="project__slider-container">
+        <div class="project__slider">
+        
+          <!-- Slide 1 -->
+          <div class="project_slide">
+           <img src="./images/logo3.png" class="project__image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="project__text">
+              <strong><a href="https://github.com/Kawsar-Uddin-Ahmed/Metasploit_Penetration_testing_report">Penetration Testing Report</strong><br><strong>on Metasploit</strong></a>
+            </p>
+          </div>
+           <!-- Slide 2 -->
+           <div class="project_slide">
+          <img src="./images/logo2.jpg" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+             <p class="project__text">
+            <a href="https://github.com/Kawsar-Uddin-Ahmed/Amader_Adhunik_Bari"><strong>Rent House Finding </strong><br>
+             <strong>Project Using PHP</strong></a><br>
+          </div>
+          
+           <!-- Slide 3 -->
+           <div class="project_slide">
+          <img src="./images/logo4.png" class="achievement_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="project__text">
+             <strong>&nbsp;&nbsp;<a href="https://github.com/Kawsar-Uddin-Ahmed/Create_batch_file_for_executing_batch_command_using_python">Create batch file </strong>
+             <strong>for executing batch</strong><br>
+              <strong>command using python</strong></a>
+          </div>
+          
+          
+        </div>
+
+        <!-- Left Arrow -->
+       <div class="arrow left" onclick="moveToPrevImageProject()">&#10094;</div>
+        <!-- Right Arrow -->
+        <div class="arrow right" onclick="moveToNextImageProject()">&#10095;</div>
+      </div>
+    </div>
+  </section>
+  <!-- Link to the external JavaScript -->
+     <script src="projects.js"></script> <!-- Ensure this path is correct -->
+  </main>
+
+<!-----------Work and Experience-------------->
+
+<section class="work" id="works">
+    <div class="row">
+      <h2>Work & Experiences</h2>
+      <div class="work__slider-container">
+        <div class="work__slider">
+        
+          <!-- Slide 1 -->
+          <div class="work_slide">
+           <img src="./images/logo.jpeg" class="work__image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+            <p class="work__text">
+              <strong>Independent Security Researcher</strong><br>
+             <strong>Yes We Hack</strong><br>
+             <strong>2022 - 2023</strong><br>
+            Conducted security testing on web applications focusing on SSRF, RCE,SQLi,XSS.
+            </p>
+          </div>
+           <!-- Slide 2 -->
+         <div class="work_slide">
+          <img src="./images/logo6.png" class="work_image" alt="Achievement1" style="width:300px ; height:200px ; margin-left:20px;"/>
+          <p class="work__text">
+         <strong>Office Admin</strong><br>
+         <strong>Karnafully Shipping and Trading Limited</strong><br>
+         <strong>2023 - 2024</strong><br>
+         Oversaw office operations, managed financial accounts, and ensured smooth administrative processes.
+         </p>
+          </div>
+          
+        </div>
+
+        <!-- Left Arrow -->
+       <div class="arrow left" onclick="moveToPrevImageWork()">&#10094;</div>
+        <!-- Right Arrow -->
+        <div class="arrow right" onclick="moveToNextImageWork()">&#10095;</div>
+      </div>
+    </div>
+  </section>
+  <!-- Link to the external JavaScript -->
+     <script src="works.js"></script> <!-- Ensure this path is correct -->
+
+
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <div class="contact__text-container">
+    <div class="contact__text">LinkedIn:</div>
+    <div class="contact__image">
+        <a href="https://www.linkedin.com/in/kawsar-uddin-09a413136/" target="_blank"><img src="./images/logo11.png" alt="Your Image"style="width:100px ; height:100px;" ></a>
+    </div>
+    
+</div>
+   <div class="contact__text-container">
+    <div class="contact__text">Gmail:</div>
+    <div class="contact__text">
+        <p><strong>&nbsp;&nbsp;&nbsp;kawsaruddin19@gmail.com</strong><p>
+    </div>
+
+</div>
+   <div class="contact__text-container">
+    <div class="contact__text">Cell NO:</div>
+    <div class="contact__text">
+        <p><strong>&nbsp;&nbsp;&nbsp;01725591538</strong><p>
+    </div>
+    
+</div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://x.com/kawsaruddi23673/" title="Link to Twitter Profile" target="_blank">
+            <img src="./images/X.jpeg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Kawsar-Uddin-Ahmed/" title="Link to Github Profile" target="_blank">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/kawsar-uddin-09a413136/" target="_blank">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+         <li class="footer__social-link-item">
+          <a href="https://medium.com/@kawsaruddin238" target="_blank">
+            <img src="./images/medium.png" title="Link to Linkedin Profile" class="footer__social-image" alt="Medium">
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
